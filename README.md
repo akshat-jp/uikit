@@ -1,29 +1,8 @@
 > ***Beautiful UI Components. Ready to Copy ⚡***
 
 <div align="center">
-
-<img src="./public/readme/hero-preview.png" alt="UIKIT Hero Preview" />
-
-<br />
-
-<p align="center">
-Modern, reusable, production-ready UI components built for developers who want to ship faster.
-Browse components, preview them live, and instantly copy the code into your project.
-</p>
-
-<br />
-
-<p align="center">
-  <img src="https://img.shields.io/github/stars/yourusername/uikit?style=social" />
-  <img src="https://img.shields.io/github/forks/yourusername/uikit?style=social" />
-  <img src="https://img.shields.io/github/license/yourusername/uikit?style=social" />
-</p>
-
+  <img src="public/readme/hero.png" alt="UIKIT Banner" />
 </div>
-
----
-
-## ✨ About
 
 UIKIT is a modern UI component platform that provides developers with beautifully crafted, copy-paste-ready components for building faster and better interfaces.
 
@@ -41,35 +20,28 @@ Just clean UI components ready to use.
 
 ---
 
-## 🚀 Features
+##  Features
 
-* ⚡ Copy-paste ready UI components
-* 🎨 Beautiful modern interface
-* 🌙 Dark mode inspired design
-* 📦 Production-ready code
-* 📱 Fully responsive components
-* 🔍 Browse by categories
-* 🖱️ Interactive live previews
-* 📋 One-click copy functionality
-* 💻 Developer-friendly structure
-* 🆓 Free to use
+*  Copy-paste ready UI components
+*  Beautiful modern interface
+*  Production-ready code
+*  Fully responsive components
+*  Add to favorites 
+*  Browse by categories
+*  Interactive live previews
+*  One-click copy functionality
+*  Developer-friendly structure
+*  Free to use
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Frontend
 
 * Next.js
-* React.js
 * TypeScript
 * Tailwind CSS
-
-### UI & Animations
-
-* Framer Motion
-* Lucide Icons
-* Custom Animations
 
 ### Deployment
 
@@ -77,7 +49,7 @@ Just clean UI components ready to use.
 
 ---
 
-## 📦 Getting Started
+##  Getting Started
 
 ### Clone the Repository
 
@@ -111,13 +83,14 @@ http://localhost:3000
 
 ---
 
-## 📚 How To Use Components
+##  How To Use Components
 
-1. Browse the component collection
-2. Open a component preview
-3. Click the **Copy Code** button
-4. Paste the code into your project
-5. Customize it however you want
+1. Visit the live site: [UIKit](https://uikit.vercel.app/) 
+2. Browse the component collection
+3. Open a component preview
+4. Click the **Copy Code** button
+5. Paste the code into your project
+6. Customize it however you want
 
 Example:
 
@@ -135,7 +108,7 @@ export default function Home() {
 
 ---
 
-## 🎯 Perfect For
+##  Perfect For
 
 * Landing Pages
 * SaaS Applications
@@ -147,15 +120,7 @@ export default function Home() {
 
 ---
 
-## 📸 Preview
-
-<img src="./public/readme/preview-1.png" />
-<img src="./public/readme/preview-2.png" />
-<img src="./public/readme/preview-3.png" />
-
----
-
-## 🤝 Contributing
+##  Contributing
 
 > This project is currently under development.
 
@@ -165,7 +130,7 @@ Stay tuned.
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```bash
 uikit/
@@ -186,23 +151,17 @@ uikit/
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License.
 
 ---
 
-## 👨‍💻 Built By
+##  Built By
 
-Built with passion by **Akshat Verma**.
-
-If you like this project, consider giving it a ⭐ on GitHub.
-
-### Connect
-
-* GitHub: https://github.com/yourusername
-* Twitter/X: https://x.com/yourusername
+* GitHub: [@akshat-jp](https://github.com/akshat-jp) 
+* Twitter/X: [@akshat_jp](https://x.com/akshat_jp) 
 
 ---
 
-> ***Ship faster, not harder ⚡***
+> ***DO THE HARD WORK SPECIALLY WHEN YOU DON'T FEEL LIKE IT ❤️***
