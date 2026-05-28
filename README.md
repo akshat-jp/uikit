@@ -85,7 +85,7 @@ http://localhost:3000
 
 ##  How To Use Components
 
-1. Visit the live site: [UIKit](https://uikit.vercel.app/) 
+1. Visit the live site: [UIKit](akshat-jp/pattern-craft) 
 2. Browse the component collection
 3. Open a component preview
 4. Click the **Copy Code** button
