@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer utilities {
+  .dot-grid-light {
+    background-image: radial-gradient(circle, #d1d5db 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  .dot-grid-dark {
+    background-image: radial-gradient(circle, #374151 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  .card-preview {
+    background: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      rgba(124, 58, 237, 0.04) 10px,
+      rgba(124, 58, 237, 0.04) 20px
+    );
+  }
+  .card-preview-dark {
+    background: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      rgba(124, 58, 237, 0.08) 10px,
+      rgba(124, 58, 237, 0.08) 20px
+    );
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
