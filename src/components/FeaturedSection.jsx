@@ -1,7 +1,7 @@
 import ComponentCard from './ComponentCard';
 import { COMPONENTS } from '@/utils/data';
 
-export default function FeaturedSection({ darkMode, favorites, onToggleFav, activeCategory, onViewAll }) {
+export default function FeaturedSection({setDarkMode, darkMode, favorites, onToggleFav, activeCategory, onViewAll }) {
   const filtered = activeCategory === 'All'
     ? COMPONENTS
     : COMPONENTS.filter(c => c.category === activeCategory);
@@ -43,6 +43,7 @@ export default function FeaturedSection({ darkMode, favorites, onToggleFav, acti
               key={component.id}
               component={component}
               darkMode={darkMode}
+              setDarkMode={setDarkMode}
               isFav={favorites.some(f => f.id === component.id)}
               onToggleFav={onToggleFav}
             />

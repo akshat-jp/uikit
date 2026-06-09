@@ -11,7 +11,7 @@ export default function Hero({ darkMode, onBrowse }) {
         <div className="inline-flex items-center gap-2 mb-6 animate-fade-in">
           <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold border ${darkMode ? 'bg-violet-900/40 border-violet-700/50 text-violet-300' : 'bg-violet-50 border-violet-200 text-violet-700'}`}>
             <span className="w-1.5 h-1.5 rounded-full bg-violet-500 animate-pulse" />
-            100+ New Components Added
+            10+ New Components Added
           </span>
         </div>
 

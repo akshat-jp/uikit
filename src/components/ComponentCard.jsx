@@ -3,11 +3,11 @@
 import { useState } from 'react';
 import ComponentPreview from './ComponentPreview';
 
-export default function ComponentCard({ component, darkMode, isFav, onToggleFav }) {
+export default function ComponentCard({setDarkMode, component, darkMode, isFav, onToggleFav }) {
   const [copied, setCopied] = useState(false);
 
   function handleCopy() {
-    const code = `// ${component.name} Component\n// Copy from UIKit — uikit.dev`;
+    const code = component.code || `// ${component.name} Component\n// Copy from UIKit — uikit.dev`;
     navigator.clipboard.writeText(code).catch(() => {});
     setCopied(true);
     setTimeout(() => setCopied(false), 1800);
@@ -21,7 +21,7 @@ export default function ComponentCard({ component, darkMode, isFav, onToggleFav 
     }`}>
       {/* Preview area */}
       <div className={`relative h-36 ${darkMode ? 'card-preview-dark bg-gray-800/50' : 'card-preview bg-gray-50'} overflow-hidden`}>
-        <ComponentPreview type={component.preview} darkMode={darkMode} />
+        <ComponentPreview   type={component.preview}  darkMode={darkMode} setDarkMode={setDarkMode} />
 
         {/* Bookmark / favorite button */}
         <button

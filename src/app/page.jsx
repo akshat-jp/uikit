@@ -63,6 +63,7 @@ export default function Home() {
 
       <FeaturedSection
         darkMode={darkMode}
+        setDarkMode={setDarkMode}
         favorites={favorites}
         onToggleFav={handleToggleFav}
         activeCategory={activeCategory}
