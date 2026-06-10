@@ -1,4 +1,4 @@
-import {ThemeToggle} from "../elements/button/ThemeToggle"
+import {ThemeToggle} from "../elements/buttons/ThemeToggle"
 
 export default function ComponentPreview({setDarkMode, type, darkMode }) {
   const base = `w-full h-full flex items-center justify-center ${darkMode ? 'bg-neutral-950' : 'bg-neutral-100'} `;
@@ -14,7 +14,7 @@ export default function ComponentPreview({setDarkMode, type, darkMode }) {
     theme: (
       <div className={base}>
         <div >
-          <ThemeToggle />
+          <ThemeToggle setDarkMode={setDarkMode} darkMode={darkMode} />
         </div>
       </div>
     ),

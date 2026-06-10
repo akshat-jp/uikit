@@ -12,6 +12,8 @@ import Footer from '@/components/Footer';
 import { getFavorites, toggleFavorite } from '@/utils/favorites';
 
 export default function Home() {
+    
+
   const [darkMode, setDarkMode] = useState(false);
   const [activeCategory, setActiveCategory] = useState('All');
   const [favorites, setFavorites] = useState([]);
@@ -20,6 +22,7 @@ export default function Home() {
   // Hydrate from localStorage after mount (avoids SSR mismatch)
   useEffect(() => {
     try {
+      
       const saved = localStorage.getItem('uikit_theme');
       if (saved === 'dark') setDarkMode(true);
     } catch {}
@@ -45,7 +48,7 @@ export default function Home() {
   };
 
   return (
-    <div className={`min-h-screen transition-colors duration-200 ${darkMode ? 'bg-gray-950' : 'bg-white'}`}>
+    <div className={`min-h-screen ${darkMode ? 'bg-gray-950' : 'bg-white'}`}>
       <Navbar
         darkMode={darkMode}
         setDarkMode={setDarkMode}

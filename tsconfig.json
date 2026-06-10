@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "src/elements/buttons/ThemeToggle.jsx", "src/utils/data.js", "src/utils/favorites.js"  ],
   "exclude": ["node_modules"]
 }

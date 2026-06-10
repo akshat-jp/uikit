@@ -22,7 +22,7 @@ export default function Navbar({ darkMode, setDarkMode, favCount, onFavoritesCli
               <button
                 key={link}
                 onClick={link === 'Favorites' ? onFavoritesClick : undefined}
-                className={`text-sm font-medium relative transition-colors ${darkMode ? 'text-gray-400 hover:text-white' : 'text-gray-500 hover:text-gray-900'}`}
+                className={`text-sm font-medium relative  ${darkMode ? 'text-gray-400 hover:text-white' : 'text-gray-500 hover:text-gray-900'}`}
               >
                 {link}
                 {link === 'Favorites' && favCount > 0 && (
@@ -36,7 +36,7 @@ export default function Navbar({ darkMode, setDarkMode, favCount, onFavoritesCli
         {/* Right side */}
         <div className="flex items-center gap-2">
           {/* Search */}
-          <div className={`hidden sm:flex items-center gap-2 px-3 h-8 rounded-lg text-sm ${darkMode ? 'bg-gray-800 text-gray-400' : 'bg-gray-100 text-gray-500'} transition-all`}>
+          <div className={`hidden sm:flex items-center gap-2 px-3 h-8 rounded-lg text-sm ${darkMode ? 'bg-gray-800 text-gray-400' : 'bg-gray-100 text-gray-500'} `}>
             <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
@@ -52,7 +52,7 @@ export default function Navbar({ darkMode, setDarkMode, favCount, onFavoritesCli
           {/* Theme toggle */}
           <button
             onClick={() => setDarkMode(!darkMode)}
-            className={`w-8 h-8 rounded-lg flex items-center justify-center transition-colors ${darkMode ? 'bg-gray-800 text-yellow-400 hover:bg-gray-700' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
+            className={`w-8 h-8 rounded-lg flex items-center justify-center  ${darkMode ? 'bg-gray-800 text-yellow-400 hover:bg-gray-700' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
           >
             {darkMode ? (
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3a9 9 0 100 18 9 9 0 000-18zm0 2a7 7 0 017 7 7 7 0 01-7 7 7 7 0 01-7-7 7 7 0 017-7z"/><path d="M12 7a5 5 0 100 10A5 5 0 0012 7z"/></svg>

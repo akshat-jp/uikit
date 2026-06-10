@@ -14,19 +14,19 @@ export default function ComponentCard({setDarkMode, component, darkMode, isFav, 
   }
 
   return (
-    <div className={`group rounded-2xl border flex flex-col overflow-hidden transition-all duration-200 hover:shadow-xl animate-fade-in ${
+    <div className={`group rounded-2xl border flex flex-col overflow-hidden   hover:shadow-xl animate-fade-in ${
       darkMode
         ? 'bg-gray-900 border-gray-800 hover:border-violet-700/60 hover:shadow-violet-900/20'
         : 'bg-white border-gray-200 hover:border-violet-300 hover:shadow-violet-100'
     }`}>
       {/* Preview area */}
-      <div className={`relative h-36 ${darkMode ? 'card-preview-dark bg-gray-800/50' : 'card-preview bg-gray-50'} overflow-hidden`}>
+      <div className={`relative h-[240px] ${darkMode ? 'card-preview-dark bg-gray-800/50' : 'card-preview bg-gray-50'} overflow-hidden`}>
         <ComponentPreview   type={component.preview}  darkMode={darkMode} setDarkMode={setDarkMode} />
 
         {/* Bookmark / favorite button */}
         <button
           onClick={() => onToggleFav(component)}
-          className={`absolute top-2 right-2 w-7 h-7 rounded-lg flex items-center justify-center transition-all opacity-0 group-hover:opacity-100 ${
+          className={`absolute top-2 right-2 w-7 h-7 rounded-lg flex items-center justify-center  opacity-0 group-hover:opacity-100 ${
             isFav
               ? 'opacity-100 bg-violet-600 text-white'
               : darkMode
@@ -41,7 +41,7 @@ export default function ComponentCard({setDarkMode, component, darkMode, isFav, 
         </button>
 
         {/* Preview pill */}
-        <span className={`absolute bottom-2 left-2 text-[9px] font-medium px-1.5 py-0.5 rounded opacity-0 group-hover:opacity-100 transition-opacity ${darkMode ? 'bg-gray-700 text-gray-300' : 'bg-white text-gray-500 border border-gray-200 shadow-sm'}`}>
+        <span className={`absolute bottom-2 left-2 text-[9px] font-medium px-1.5 py-0.5 rounded opacity-0 group-hover:opacity-100  ${darkMode ? 'bg-gray-700 text-gray-300' : 'bg-white text-gray-500 border border-gray-200 shadow-sm'}`}>
           Preview
         </span>
       </div>
@@ -63,7 +63,7 @@ export default function ComponentCard({setDarkMode, component, darkMode, isFav, 
         {/* Copy button */}
         <button
           onClick={handleCopy}
-          className={`w-full flex items-center justify-center gap-1.5 py-1.5 rounded-lg text-xs font-semibold border transition-all ${
+          className={`w-full flex items-center justify-center gap-1.5 py-1.5 rounded-lg text-xs font-semibold border  ${
             copied
               ? 'bg-green-600 border-green-600 text-white'
               : darkMode

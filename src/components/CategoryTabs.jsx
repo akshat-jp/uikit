@@ -17,7 +17,7 @@ export default function CategoryTabs({ active, onChange, darkMode }) {
             <button
               key={cat}
               onClick={() => onChange(cat)}
-              className={`shrink-0 px-3 py-1.5 rounded-lg text-sm font-medium transition-all whitespace-nowrap ${
+              className={`shrink-0 px-3 py-1.5 rounded-lg text-sm font-medium transition-all duration-200 whitespace-nowrap ${
                 active === cat
                   ? 'bg-violet-600 text-white shadow-sm'
                   : darkMode

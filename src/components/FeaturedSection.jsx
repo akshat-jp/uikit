@@ -16,7 +16,7 @@ export default function FeaturedSection({setDarkMode, darkMode, favorites, onTog
         <div className="flex items-center gap-2">
           <button
             onClick={onViewAll}
-            className={`text-sm font-medium text-violet-600 hover:text-violet-700 transition-colors`}
+            className={`text-sm font-medium text-violet-600 hover:text-violet-700 `}
           >
             View all →
           </button>

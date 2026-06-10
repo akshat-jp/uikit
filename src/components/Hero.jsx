@@ -38,7 +38,7 @@ export default function Hero({ darkMode, onBrowse }) {
             </svg>
             Browse Components
           </button>
-          <button className={`w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-2.5 font-semibold rounded-xl border transition-all ${darkMode ? 'border-gray-700 text-gray-300 hover:bg-gray-800' : 'border-gray-300 text-gray-700 hover:bg-gray-50'}`}>
+          <button className={`w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-2.5 font-semibold rounded-xl border  ${darkMode ? 'border-gray-700 text-gray-300 hover:bg-gray-800' : 'border-gray-300 text-gray-700 hover:bg-gray-50'}`}>
             View Readme
           </button>
         </div>
